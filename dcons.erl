@@ -18,7 +18,6 @@ procedure([], _, _, [], _) ->
 	{1, [], [], []};
 
 procedure([], _, [], B, M) ->
-	io:fwrite("~w\n", [B]),
 	S = lists:append(lists:filter(fun(X) -> (length(X) == 1) and (lists:last(atom_to_list(lists:nth(1,X))) /= 95) end, B)),
 	R = lists:map(fun(X) -> core:inverse(X) end, S),
 	{0, S, R, M};	
