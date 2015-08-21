@@ -3,6 +3,7 @@ erlc iotasks.erl
 erlc dbase.erl
 erlc dcons.erl
 erlc dcons2.erl
+erlc branches.erl
 erlc eunittests.erl
 erlc make.erl
 erl -noshell -s make doit -s init stop
